@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Task Management</title>
+    <meta name="Ibtehal Amro" content="task management dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./assets/Stylesheets/SidebarStyle.css"/>
+    <link rel="stylesheet" href="./assets/Stylesheets/Common.css"/>
+    <link rel="stylesheet" href="./assets/Stylesheets/HeaderOfMainContent.css"/>
+    <link rel="stylesheet" href="./assets/Stylesheets/MainContent.css"/>
+    <link rel="stylesheet" href="./assets/Stylesheets/ProjectTaskStages.css"/>
+    <link rel="stylesheet" href="./assets/Stylesheets/SelectedTask.css"/>
+    <link rel="icon" type="image/x-icon" href="assets/svg/icons/main-icon.jpg"/>
+</head>
+
+<body>
+<aside>
+    <div class="sidebar-wrapper d-flex">
+        <header class="sidebar-icon">
+            <img class="main-icon" src="assets/svg/icons/main-icon.jpg" alt="left sidebar icon "/>
+        </header>
+        <!--        the sidebar-links will contain the list of links with their icons-->
+        <nav class="sidebar-links d-flex">
+            <a class="link sidebar-link-wrapper d-flex active " href="#">
+                <img class="icon" src="assets/svg/icons/dashboard.svg"/>
+                <h6>Dashboard</h6>
+            </a>
+
+            <a class="link sidebar-link-wrapper d-flex " href="">
+                <img class="icon" src="assets/svg/icons/services.svg"/>
+                <h6>Services</h6>
+            </a>
+
+            <a class="link sidebar-link-wrapper d-flex " href="">
+                <img class="icon" src="assets/svg/icons/issues.svg"/>
+                <h6>Issues</h6>
+            </a>
+
+            <a class="link sidebar-link-wrapper d-flex " href="">
+                <img class="icon" src="assets/svg/icons/analyse.svg"/>
+                <h6>Analysis</h6>
+            </a>
+            <a class="link sidebar-link-wrapper d-flex " href="">
+                <img class="icon" src="assets/svg/icons/settings-6.svg"/>
+                <h6>Settings</h6>
+            </a>
+
+
+        </nav>
+        <footer>
+
+            <a class="link sidebar-link-wrapper d-flex " href="">
+                <img class="icon" src="assets/svg/icons/signout.svg"/>
+                <h6>SignOut</h6>
+            </a>
+
+
+        </footer>
+    </div>
+
+</aside>
+<!--main content is the right side of the grid in the screen with min-width 768px and the bottom section on the smaller screens-->
+<main class="main-content d-flex">
+
+    <header class="main-content-header-wrapper">
+        <nav class="main-content-header d-flex">
+            <div class="user-details d-flex">
+                <!--                TODO change this to username-->
+                <a href="index.html"><h5><b>USER NAME</b></h5></a>
+                <!--              TODO change this to user role-->
+                <h6>Software Engineer </h6>
+            </div>
+
+            <ul class="d-flex">
+                <li>
+                    <div>
+                        <a href="index.html">
+                            <img class="nav-icon" src="assets/svg/icons/alarm.png"
+                                 alt="notification icon with red ball to indicate if there is notifications"/>
+                            <!--                        if there is unread notifications then this span will appear-->
+                            <span class=" red-circle"></span>
+                        </a>
+                    </div>
+
+                </li>
+                <!-- TODO add organization link and name-->
+                <li>
+                    <a href="#"><h5><b>Organization</b></h5></a>
+                </li>
+
+                <li class="search">
+                    <!-- TODO Add action to the search form-->
+                    <form class="d-flex" action="#">
+                        <input type="text" placeholder="Search">
+                        <button class="search-button" type="button">
+                            <img class="search-icon" src="assets/svg/icons/search.png" alt="search button"/>
+                        </button>
+                    </form>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="page-title">
+        <!--TODO change this to page title that is selected-->
+        <h3><a href="#">Dashboard</a></h3>
+    </div>
+    <!--    *********************-->
+    <div class="tasks">
+        <!--    project task stages -->
+        <div class="project-task-stages">
+            <section class="stage-new col1-background">
+
+                <header class="stage-header">
+                    <h4>NEW</h4>
+                </header>
+                <main class="task-cards-wrapper">
+                    <div class="card">
+                        <header class="task-card-header"><h4>Title</h4></header>
+                        <main>
+                            <h5 class="card-subtitle">sub title</h5>
+                        </main>
+                        <footer class="card-footer d-flex">
+                            <div class="users-imgs d-flex">
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/female.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/male.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                            </div>
+                            <div class="extra">
+                                <h5 class="number">+4</h5>
+                            </div>
+
+                        </footer>
+                    </div>
+                    <div class="card">
+                        <header class="task-card-header"><h4>Title</h4></header>
+                        <main>
+                            <h5 class="card-subtitle">sub title</h5>
+                        </main>
+                        <footer class="card-footer d-flex">
+                            <div class="users-imgs d-flex">
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/female.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/male.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                            </div>
+                            <div class="extra">
+                                <h5 class="number">+4</h5>
+                            </div>
+
+                        </footer>
+                    </div>
+                    <div class="card">
+                        <header class="task-card-header"><h4>Title</h4></header>
+                        <main>
+                            <h5 class="card-subtitle">sub title</h5>
+                        </main>
+                        <footer class="card-footer d-flex">
+                            <div class="users-imgs d-flex">
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/female.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/male.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                            </div>
+                            <div class="extra">
+                                <h5 class="number">+4</h5>
+                            </div>
+
+                        </footer>
+                    </div>
+                    <div class="card">
+                        <header class="task-card-header"><h4>Title</h4></header>
+                        <main>
+                            <h5 class="card-subtitle">sub title</h5>
+                        </main>
+                        <footer class="card-footer d-flex">
+                            <div class="users-imgs d-flex">
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/female.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/male.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                            </div>
+                            <div class="extra">
+                                <h5 class="number">+4</h5>
+                            </div>
+
+                        </footer>
+                    </div>
+                    <div class="card">
+                        <header class="task-card-header"><h4>Title</h4></header>
+                        <main>
+                            <h5 class="card-subtitle">sub title</h5>
+                        </main>
+                        <footer class="card-footer d-flex">
+                            <div class="users-imgs d-flex">
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/female.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/male.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                            </div>
+                            <div class="extra">
+                                <h5 class="number">+4</h5>
+                            </div>
+
+                        </footer>
+                    </div>
+                </main>
+
+                <footer class="stage-footer">
+                    <button type="button" class="stage-footer-button col3-background  ">
+                        <img src="assets/svg/icons/plus.png" alt="plus icon on the stage footer button">
+                        Add New Task
+                    </button>
+
+                </footer>
+            </section>
+            <section class="in-progress col2-background">
+
+                <header class="stage-header">
+                    <h4>IN PROGRESS</h4>
+                </header>
+                <main class="task-cards-wrapper">
+
+
+                    <div class="card selected-task">
+
+                        <header class="task-card-header">
+                            <h4>Title</h4>
+                        </header>
+                        <main>
+                            <h5 class="card-subtitle">sub title</h5>
+                            <!--                         this aside will be added to the task that is been selected with its content fetched when it is required-->
+                            <div
+                                    class="task-details-wrapper">
+                                <aside class="task-details">
+                                    <div class="col">
+                                        <!-- TODO change task id to variable-->
+                                        <h3 class="task-id">#2312323</h3>
+                                    </div>
+                                    <div class="col">
+                                        <h3>- Created at:</h3>
+                                        <!--  TODO change date to variable-->
+                                        <p class="created-at">{2020-02-02}</p>
+                                    </div>
+                                    <div class="col">
+                                        <h3>- Task Title:</h3>
+                                        <p class="owner">task title </p>
+                                    </div>
+                                    <div class="col">
+                                        <h3>- Owner:</h3>
+                                        <p class="owner">USER 1</p>
+                                    </div>
+                                    <div class="col">
+                                        <h3>- Due Date:</h3>
+                                        <p class="due-date">2020-02-10</p>
+                                    </div>
+                                    <div class="col">
+                                        <h3 class="description">- Description:</h3>
+                                        <textarea></textarea>
+                                    </div>
+                                    <div class="col">
+                                        <h3 class="comment">- Comments:</h3>
+                                        <textarea></textarea>
+                                    </div>
+                                    <div class="col">
+                                        <label for="upload-file">Select a file to attach:</label>
+                                        <input type="file" id="upload-file" name="upload-file">
+                                    </div>
+                                </aside>
+                            </div>
+                        </main>
+                        <footer class="card-footer d-flex">
+                            <div class="users-imgs d-flex">
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/female.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/male.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                            </div>
+                            <div class="extra">
+                                <h5 class="number">+4</h5>
+                            </div>
+
+                        </footer>
+                    </div>
+                    <div class="card">
+                        <header class="task-card-header"><h4>Title</h4></header>
+                        <main>
+                            <h5 class="card-subtitle">sub title</h5>
+                        </main>
+                        <footer class="card-footer d-flex">
+                            <div class="users-imgs d-flex">
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/female.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/male.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                            </div>
+                            <div class="extra">
+                                <h5 class="number">+4</h5>
+                            </div>
+
+                        </footer>
+                    </div>
+                </main>
+
+
+            </section>
+            <section class="qa-stage col2-background">
+
+                <header class="stage-header">
+                    <h4>QA STAGE</h4>
+                </header>
+                <main class="task-cards-wrapper">
+                    <div class="card">
+                        <header class="task-card-header"><h4>Title</h4></header>
+                        <main>
+                            <h5 class="card-subtitle">sub title</h5>
+                        </main>
+                        <footer class="card-footer d-flex">
+                            <div class="users-imgs d-flex">
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/female.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/male.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                            </div>
+                            <div class="extra">
+                                <h5 class="number">+4</h5>
+                            </div>
+
+                        </footer>
+                    </div>
+                </main>
+
+
+            </section>
+            <section class="done col1-background">
+
+                <header class="stage-header">
+                    <h4>DONE</h4>
+                </header>
+                <main class="task-cards-wrapper">
+
+
+                    <div class="card done-task ">
+                        <header class="task-card-header"><h4>Title</h4></header>
+                        <main>
+                            <h5 class="card-subtitle">sub title</h5>
+                        </main>
+                        <footer class="card-footer d-flex">
+                            <div class="users-imgs d-flex">
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/female.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/male.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                            </div>
+                            <div class="extra">
+                                <h5 class="number">+4</h5>
+                            </div>
+
+                        </footer>
+                    </div>
+                    <div class="card done-task">
+                        <header class="task-card-header"><h4>Title</h4></header>
+                        <main>
+                            <h5 class="card-subtitle">sub title</h5>
+                        </main>
+                        <footer class="card-footer d-flex">
+                            <div class="users-imgs d-flex">
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/female.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                                <a class="card-footer-icon-link" href="#">
+                                    <img class="card-footer-icon" src="assets/svg/icons/male.svg"
+                                         alt="card footer image to represent contributor"/>
+                                </a>
+                            </div>
+                            <div class="extra">
+                                <h5 class="number">+4</h5>
+                            </div>
+
+                        </footer>
+                    </div>
+                </main>
+
+            </section>
+
+
+        </div>
+    </div>
+
+</main>
+</body>
+
+</html>

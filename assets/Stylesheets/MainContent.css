@@ -1,0 +1,10 @@
+.main-content{
+    flex-direction: column;
+    position: relative;
+}
+/*page title*/
+.page-title {
+    margin-top: 1rem;
+    border-bottom: 2px solid ;
+
+}

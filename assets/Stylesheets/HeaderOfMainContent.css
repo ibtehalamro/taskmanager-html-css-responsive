@@ -1,0 +1,101 @@
+.main-content-header-wrapper { /**styling the header element that contain the content of the top navbar*/
+    background-color: #cade35;
+}
+
+/*styling the nav element */
+.main-content-header {
+    padding: .5em;
+    flex-flow: nowrap;
+    height: 3rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/*user details and user role*/
+.user-details {
+
+    flex-direction: column;
+    flex: 2;
+    justify-content: space-between;
+}
+
+/*user details and user role*/
+
+.main-content-header ul {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+
+}
+
+li {
+    display: block;
+    position: relative;
+    padding: 0 3px;
+    font-size: .7rem;
+}
+
+.nav-icon {
+    width: 1.5em;
+}
+
+.red-circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    top: 2px;
+    right: 0;
+    border-radius: 50%;
+}
+
+/*the search input text*/
+.search {
+    flex: .1;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+form {
+    height: 100%;
+    align-items: center;
+}
+
+.search input {
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    height: 60%;
+    border: none;
+    padding-left: .6em;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search-button {
+    position: relative;
+    width: 1.5em;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    height: 60%;
+    box-shadow: 1px 1px 3px;
+    background: none;
+    border: none;
+}
+
+.search-icon {
+    width: 1em;
+}
+
+@media (min-width: 768px) {
+    li {
+
+        font-size: 1rem;
+    }
+
+}

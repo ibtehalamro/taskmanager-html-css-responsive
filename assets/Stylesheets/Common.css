@@ -1,0 +1,87 @@
+:root {
+    font-size: 16px;
+    --sidebar-links-background-color: #020254;
+    --sidebar-links-font-color: wheat;
+}
+html { height: 100%; }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/***************/
+/* Body  */
+body {
+
+    height: 100vh;
+    overflow: auto;
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns:1fr;
+    grid-template-rows: 3rem 1fr;
+    position: relative;
+    font-family: Georgia, sans-serif;
+    z-index: 1;
+}
+
+/*note class used to style the note for the developer and will be removed later*/
+.Note{
+    color: darkgoldenrod;
+    animation: move alternate infinite 1s;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.col1-background  {
+    background:  linear-gradient(0deg, #ffffff, #cfe4ff);
+}
+.col2-background{
+    background:  linear-gradient(0deg, #ffffff, #e9e8e9);
+}
+.col3-background{
+    background-color: #cfe4ff;
+}
+@keyframes move {
+ from{
+     margin-left: 0;
+ }  to{
+         margin-left: 20px;
+
+     }
+}
+/*** end of body**/
+/*****************/
+
+/*scroll bar */
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+::-webkit-scrollbar-track {
+    border: 1px solid #bed0e2;
+    box-shadow: inset 0 0 2px 1px #3a3a5b;
+
+
+}
+::-webkit-scrollbar-thumb {
+    background:  linear-gradient(60deg, #7fa3c4, var(--sidebar-links-background-color));
+
+}
+::-webkit-scrollbar-thumb:hover {
+    background:  linear-gradient(30deg, #102686, #264354);
+
+}
+
+@media (min-width: 768px ) {
+    body{font-size: 17px;
+        grid-template-columns: minmax(50px, 5%) 1fr;
+        grid-template-rows: 100vh;}
+}
