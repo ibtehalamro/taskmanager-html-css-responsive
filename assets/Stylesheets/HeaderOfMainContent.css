@@ -1,5 +1,6 @@
 .main-content-header-wrapper { /**styling the header element that contain the content of the top navbar*/
-    background-color: #cade35;
+    /*background-color: #cade35;*/
+    color: white;
 }
 
 /*styling the nav element */
@@ -84,7 +85,7 @@ form {
     border-bottom-right-radius: 30%;
     height: 60%;
     box-shadow: 1px 1px 3px;
-    background: none;
+
     border: none;
 }
 

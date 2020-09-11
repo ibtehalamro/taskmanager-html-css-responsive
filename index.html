@@ -11,38 +11,38 @@
     <link rel="stylesheet" href="./assets/Stylesheets/MainContent.css"/>
     <link rel="stylesheet" href="./assets/Stylesheets/ProjectTaskStages.css"/>
     <link rel="stylesheet" href="./assets/Stylesheets/SelectedTask.css"/>
-    <link rel="icon" type="image/x-icon" href="assets/svg/icons/main-icon.jpg"/>
+    <link rel="icon svg-to-white" type="image/x-icon" href="assets/svg/icons/main-icon.svg"/>
 </head>
 
 <body>
 <aside>
-    <div class="sidebar-wrapper d-flex">
+    <div class="sidebar-wrapper d-flex col-main">
         <header class="sidebar-icon">
-            <img class="main-icon" src="assets/svg/icons/main-icon.jpg" alt="left sidebar icon "/>
+            <img class="main-icon svg-to-white" src="assets/svg/icons/main-icon.svg" alt="left sidebar icon "/>
         </header>
         <!--        the sidebar-links will contain the list of links with their icons-->
         <nav class="sidebar-links d-flex">
             <a class="link sidebar-link-wrapper d-flex active " href="#">
-                <img class="icon" src="assets/svg/icons/dashboard.svg"/>
+                <img class="icon svg-to-white svg-to-white" src="assets/svg/icons/dashboard.svg"/>
                 <h6>Dashboard</h6>
             </a>
 
             <a class="link sidebar-link-wrapper d-flex " href="">
-                <img class="icon" src="assets/svg/icons/services.svg"/>
+                <img class="icon svg-to-white" src="assets/svg/icons/services.svg"/>
                 <h6>Services</h6>
             </a>
 
             <a class="link sidebar-link-wrapper d-flex " href="">
-                <img class="icon" src="assets/svg/icons/issues.svg"/>
+                <img class="icon svg-to-white" src="assets/svg/icons/issues.svg"/>
                 <h6>Issues</h6>
             </a>
 
             <a class="link sidebar-link-wrapper d-flex " href="">
-                <img class="icon" src="assets/svg/icons/analyse.svg"/>
+                <img class="icon svg-to-white" src="assets/svg/icons/analyse.svg"/>
                 <h6>Analysis</h6>
             </a>
             <a class="link sidebar-link-wrapper d-flex " href="">
-                <img class="icon" src="assets/svg/icons/settings-6.svg"/>
+                <img class="icon svg-to-white" src="assets/svg/icons/settings-6.svg"/>
                 <h6>Settings</h6>
             </a>
 
@@ -51,7 +51,7 @@
         <footer>
 
             <a class="link sidebar-link-wrapper d-flex " href="">
-                <img class="icon" src="assets/svg/icons/signout.svg"/>
+                <img class="icon svg-to-white" src="assets/svg/icons/signout.svg"/>
                 <h6>SignOut</h6>
             </a>
 
@@ -63,7 +63,7 @@
 <!--main content is the right side of the grid in the screen with min-width 768px and the bottom section on the smaller screens-->
 <main class="main-content d-flex">
 
-    <header class="main-content-header-wrapper">
+    <header class="main-content-header-wrapper col-main">
         <nav class="main-content-header d-flex">
             <div class="user-details d-flex">
                 <!--                TODO change this to username-->
@@ -76,7 +76,7 @@
                 <li>
                     <div>
                         <a href="index.html">
-                            <img class="nav-icon" src="assets/svg/icons/alarm.png"
+                            <img class="nav-icon svg-to-white" src="assets/svg/icons/alarm.svg"
                                  alt="notification icon with red ball to indicate if there is notifications"/>
                             <!--                        if there is unread notifications then this span will appear-->
                             <span class=" red-circle"></span>
@@ -93,7 +93,7 @@
                     <!-- TODO Add action to the search form-->
                     <form class="d-flex" action="#">
                         <input type="text" placeholder="Search">
-                        <button class="search-button" type="button">
+                        <button class="search-button col-main3" type="button">
                             <img class="search-icon" src="assets/svg/icons/search.png" alt="search button"/>
                         </button>
                     </form>
@@ -112,9 +112,9 @@
     <div class="tasks">
         <!--    project task stages -->
         <div class="project-task-stages">
-            <section class="stage-new col1-background">
+            <section class="stage-new col-main3">
 
-                <header class="stage-header">
+                <header class="stage-header col-main2">
                     <h4>NEW</h4>
                 </header>
                 <main class="task-cards-wrapper">
@@ -231,22 +231,22 @@
                 </main>
 
                 <footer class="stage-footer">
-                    <button type="button" class="stage-footer-button col3-background  ">
+                    <button type="button" class="stage-footer-button col-main3-solid  ">
                         <img src="assets/svg/icons/plus.png" alt="plus icon on the stage footer button">
                         Add New Task
                     </button>
 
                 </footer>
             </section>
-            <section class="in-progress col2-background">
+            <section class="in-progress col-main3">
 
-                <header class="stage-header">
+                <header class="stage-header col-main2">
                     <h4>IN PROGRESS</h4>
                 </header>
                 <main class="task-cards-wrapper">
 
 
-                    <div class="card selected-task">
+                    <div class="card selected-task ">
 
                         <header class="task-card-header">
                             <h4>Title</h4>
@@ -336,9 +336,9 @@
 
 
             </section>
-            <section class="qa-stage col2-background">
+            <section class="qa-stage col-main3">
 
-                <header class="stage-header">
+                <header class="stage-header col-main2">
                     <h4>QA STAGE</h4>
                 </header>
                 <main class="task-cards-wrapper">
@@ -368,9 +368,9 @@
 
 
             </section>
-            <section class="done col1-background">
+            <section class="done col-main3">
 
-                <header class="stage-header">
+                <header class="stage-header col-main2">
                     <h4>DONE</h4>
                 </header>
                 <main class="task-cards-wrapper">

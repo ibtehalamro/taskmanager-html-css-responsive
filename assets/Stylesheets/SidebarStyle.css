@@ -14,7 +14,7 @@
     padding: 3px 5px 5px 5px;
     height: 100%;
     color: wheat;
-    background: repeating-linear-gradient(0deg, var(--sidebar-links-background-color), var(--sidebar-links-background-color)4px, #062b2d 1px, #060635 5px);
+    /*background: repeating-linear-gradient(0deg, var(--sidebar-links-background-color), var(--sidebar-links-background-color)4px, #062b2d 1px, #060635 5px);*/
 }
 
 /*.sidebar-wrapper will be divided into 3 sections the top icon the links and the sign out icon*/
@@ -55,7 +55,6 @@
     display: block;
     width: 1.3em;
     margin-bottom: 5px;
-    filter: invert(77%) sepia(10%) saturate(100%) hue-rotate(346deg) brightness(100%) contrast(97%);
 }
 
 

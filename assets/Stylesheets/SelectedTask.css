@@ -1,6 +1,6 @@
 .selected-task {
-    border-bottom: inset 4px indianred;
-    border-left: inset 2px indianred;
+    border-bottom:  4px #cb3500;
+    border-left:6px solid #cb3500;
     border-radius: 0 0 0 10%;
     border-top: inset 4px #dbdbdb;
     border-right: inset 1px #dbdbdb;
@@ -8,12 +8,11 @@
 
 }
 
-.selected-task header{
-    border-left: .5rem solid #1f75c8;
-    border-right: .2rem solid #1f75c8;
-    border-top: .1rem solid #1f75c8;
+.selected-task header {
+    border-bottom: 1px solid #354853;
+    font-weight: bolder;
+    color: #cb3500;
 
-    padding-left: .5rem;
 
 }
 
